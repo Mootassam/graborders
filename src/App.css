@@ -40,13 +40,14 @@
   font-weight: 600;
   transition: all 0.3s ease;
 }
-#news:checked ~ nav label .news,
-#trading:checked ~ nav label .trading,
-#bitcoin:checked ~ nav label .bitcoin,
-#blockchain:checked ~ nav label .blockchain,
-#ethereum:checked ~ nav label .ethereum,
-#altcoins:checked ~ nav label .altcoins,
-#metaverse:checked ~ nav label .metaverse {
+
+#news:checked~nav label .news,
+#trading:checked~nav label .trading,
+#bitcoin:checked~nav label .bitcoin,
+#blockchain:checked~nav label .blockchain,
+#ethereum:checked~nav label .ethereum,
+#altcoins:checked~nav label .altcoins,
+#metaverse:checked~nav label .metaverse {
   color: #6f55ca;
 }
 
@@ -67,51 +68,59 @@ input[type="radio"] {
   filter: blur(0.4px);
 }
 
-#news:checked ~ nav .slider {
+#news:checked~nav .slider {
   left: 0%;
 }
-#trading:checked ~ nav .slider {
+
+#trading:checked~nav .slider {
   left: 13%;
 }
-#bitcoin:checked ~ nav .slider {
+
+#bitcoin:checked~nav .slider {
   left: 23%;
 }
-#blockchain:checked ~ nav .slider {
+
+#blockchain:checked~nav .slider {
   left: 23%;
 }
-#ethereum:checked ~ nav .slider {
+
+#ethereum:checked~nav .slider {
   left: 50%;
 }
-#altcoins:checked ~ nav .slider {
+
+#altcoins:checked~nav .slider {
   left: 71%;
 }
-#metaverse:checked ~ nav .slider {
+
+#metaverse:checked~nav .slider {
   left: 92%;
 }
 
-#news:checked ~ nav .news {
-  color: #6f55ca;
-}
-#trading:checked ~ nav .trading {
-  color: #6f55ca;
-}
-#bitcoin:checked ~ nav .bitcoin {
+#news:checked~nav .news {
   color: #6f55ca;
 }
 
-#blockchain:checked ~ nav .blockchain {
+#trading:checked~nav .trading {
   color: #6f55ca;
 }
 
-#ethereum:checked ~ nav .ethereum {
+#bitcoin:checked~nav .bitcoin {
   color: #6f55ca;
 }
 
-#altcoins:checked ~ nav .altcoins {
+#blockchain:checked~nav .blockchain {
   color: #6f55ca;
 }
 
-#metaverse:checked ~ nav .metaverse {
+#ethereum:checked~nav .ethereum {
+  color: #6f55ca;
+}
+
+#altcoins:checked~nav .altcoins {
+  color: #6f55ca;
+}
+
+#metaverse:checked~nav .metaverse {
   color: #6f55ca;
 }
 
@@ -128,12 +137,15 @@ input[type="radio"] {
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   white-space: nowrap;
-  -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
-  scrollbar-width: none; /* Hide scrollbar on Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar on IE and Edge */
+  scrollbar-width: none;
+  /* Hide scrollbar on Firefox */
 }
 
 .app__switchtab nav::-webkit-scrollbar {
-  display: none; /* Hide scrollbar on WebKit browsers */
+  display: none;
+  /* Hide scrollbar on WebKit browsers */
 }
 
 .app__switchtab nav label {
@@ -169,6 +181,7 @@ tbody {
   justify-content: center;
   align-items: center;
 }
+
 td {
   display: flex;
   padding: 10px;
@@ -220,4 +233,71 @@ td {
 .tabactive {
   border-bottom: 3px solid #6f55ca;
   transition: all 0.3s ease;
+}
+
+
+.advertise__header {
+  width: 100%;
+  height: 220px;
+  background-color: #2e3142;
+}
+
+.advertise__speaker {
+
+  width: 100%;
+  height: 60px;
+  background-color: #6f55ca;
+  margin-top: 10px;
+}
+
+
+
+.advertise__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button__deposit,
+.button__withdraw {
+  background-color: #b1b4c3;
+  width: 50%;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 13px;
+}
+
+.action__cirlce {
+  background-color: #1636eb;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.adverstise__actions {
+  align-items: center;
+  text-align: center;
+  background-color: #b1b4c3;
+  margin-top: 10px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.button__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.hall {
+  color: black !important;
 }
