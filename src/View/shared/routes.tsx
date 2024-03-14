@@ -5,8 +5,8 @@ const privateRoutes = [
     exact: true,
   },
   {
-    path: "/portfolio",
-    loader: () => import("../pages/Portfolio/Portfolio"),
+    path: "/Order",
+    loader: () => import("../pages/Order/Order"),
     exact: true,
   },
 

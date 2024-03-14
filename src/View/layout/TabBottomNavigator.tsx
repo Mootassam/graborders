@@ -15,7 +15,7 @@ function TabBottomNavigator() {
 
     {
       icon: "fa-solid fa-clipboard-list",
-      path: "/portfolio",
+      path: "/Order",
       name: "Order",
     },
 

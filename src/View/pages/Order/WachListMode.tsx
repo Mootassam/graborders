@@ -1,5 +1,5 @@
 import React from "react";
-import ListCoins from "../../../View/shared/ListCoins";
+import ListCoins from "../../shared/ListCoins";
 
 function WachListMode() {
   return (

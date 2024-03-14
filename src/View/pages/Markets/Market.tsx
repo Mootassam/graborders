@@ -58,7 +58,7 @@ function Market() {
 
         <div className="button__action">
           <div className="action__cirlce"></div>
-          <label htmlFor="">Promotion Reward</label>
+          <label htmlFor="">Invitatation</label>
         </div>
 
         <div className="button__action">

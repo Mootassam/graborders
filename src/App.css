@@ -289,7 +289,7 @@ td {
   margin-top: 10px;
   padding: 10px 10px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 10px;
   border-radius: 10px;
@@ -301,6 +301,7 @@ td {
   align-items: center;
   gap: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .hall {
