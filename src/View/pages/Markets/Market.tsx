@@ -80,7 +80,33 @@ function Market() {
 
                 <div className="vip__image"></div>
 
-                <div className="vip__text"></div>
+                <div className="vip__text">
+                  <div className="vip__title">Shopee</div>
+
+
+                  <div className="vip__details">
+
+                    <div className="vip__description">
+                      <div className="description__key">Entry Limit:</div>
+                      <div className="description__value"> 0.00</div>
+                    </div>
+                    <div className="vip__description">
+                      <div className="description__key">Level Limit:</div>
+                      <div className="description__value"> Lv 1</div>
+                    </div>
+                    <div className="vip__description">
+                      <div className="description__key">Daily order:</div>
+                      <div className="description__value">50</div>
+                    </div>
+                    <div className="vip__description">
+                      <div className="description__key">Comimsion rate:</div>
+                      <div className="description__value"> 0.26%</div>
+                    </div>
+
+
+
+                  </div>
+                </div>
 
 
 

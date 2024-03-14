@@ -249,6 +249,7 @@ td {
   width: 100%;
   background-color: #6f55ca;
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 
@@ -270,6 +271,8 @@ td {
   justify-content: center;
   display: flex;
   padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .action__cirlce {
@@ -288,7 +291,8 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px
+  gap: 10px;
+  border-radius: 10px;
 }
 
 .button__action {
@@ -315,12 +319,13 @@ td {
   width: 100%;
   padding: 10px 10px;
   border-radius: 10px;
+  gap: 20px
 }
 
 .vip__image {
   background-color: #6f55ca;
-  width: 40%;
-  height: 90px;
+  width: 50%;
+  height: 100px;
 }
 
 .content__footer {
@@ -367,5 +372,19 @@ td {
 }
 
 .speaker__text {
+  font-size: 15px;
+}
+
+.vip__description {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.description__key {
+  font-size: 15px;
+}
+
+.description__value {
+  color: #b1b4c3;
   font-size: 15px;
 }
