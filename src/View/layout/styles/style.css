@@ -1,7 +1,7 @@
 .app__header {
   background-color: #1D1D1D;
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: flex;
   align-items: center;
   align-self: center;
@@ -14,6 +14,7 @@
   top: 0;
   left: 0;
   right: 0;
+
 }
 
 .header__search {
@@ -32,6 +33,7 @@
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .page__name {

@@ -238,14 +238,15 @@ td {
 
 .advertise__header {
   width: 100%;
-  height: 220px;
+  height: 200px;
   background-color: #2e3142;
 }
 
 .advertise__speaker {
-
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
   width: 100%;
-  height: 60px;
   background-color: #6f55ca;
   margin-top: 10px;
 }
@@ -300,4 +301,71 @@ td {
 
 .hall {
   color: black !important;
+}
+
+.content__vip {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.vip {
+  display: flex;
+  background-color: #203040;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.vip__image {
+  background-color: #6f55ca;
+  width: 40%;
+  height: 90px;
+}
+
+.content__footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.user__notification {
+  background-color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+.user__details {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-bottom: 1px solid #808080;
+  padding-bottom: 20px;
+
+}
+
+.user__cirlce {
+  width: 50px;
+  height: 50px;
+  background-color: #1636eb;
+  border-radius: 50%;
+}
+
+.user__text {
+  font-size: 13px;
+  color: #2e3142 !important;
+}
+
+.speaker {
+  font-size: 30px;
+}
+
+.speaker__text {
+  font-size: 15px;
 }
