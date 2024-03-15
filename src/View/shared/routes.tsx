@@ -35,19 +35,12 @@ const privateRoutes = [
 ];
 
 const screenRoutes = [
-  {
-    path: "/exchange/:id",
-    loader: () => import("../pages/Exchange/exchangePage"),
-  },
+
   {
     path: "/currency",
     loader: () => import("../pages/Currency/CurrecnyPage"),
   },
-  {
-    path: "/coin/:id",
-    loader: () => import("../pages/Coin/coin"),
-    exact: true,
-  },
+
 
 ];
 const publicRoutes = [
