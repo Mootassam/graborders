@@ -9,27 +9,84 @@ function Portfolio() {
       <div
         style={{
           display: "flex",
-          alignItems: "center",
           justifyContent: "center",
           flexDirection: 'column'
         }}
       >
 
-        <div></div>
+        <div className="order__header">
+          <div className="order__record">
+            Order Record
+          </div>
+          <div className="order__background">
 
-
-        <h1>i am the list of orders </h1>
-
-        <p>so now this list we can add the list of items
-          so fter athat we cann the list of items
-          and then we cann apply for the others list of the trading and we can know wich one is better
-          after that we cann papply fort thlsieets
-          this list of the list of tiens
-          so after that here in this ilst list we can the list of the descriptions.
-        </p>
+            <div className="order__remaining">
+              <label htmlFor=""> Remaining Availalbe assets</label>
+              <span>5000.32</span>
+            </div>
 
 
 
+          </div>
+        </div>
+
+        <div className="order__list">
+
+          <div className="list__actions">
+            <div>
+              <span>All</span>
+            </div>
+            <div>             <span>Pending</span></div>
+            <div>             <span>Completed</span></div>
+            <div>             <span>Canceled</span></div>
+          </div>
+        </div>
+
+        <div className="list__product">
+
+          {Array.from(({ length: 5 })).map(() => <div className="single__product">
+            <div>Order Time: 2022-06-27 14:03:52</div>
+            <div>Order Number: N02206271321321354165</div>
+
+            <div className="product__image">
+
+              <div className="image__"></div>
+
+              <div className="product__detail">
+                <div>Under Armour Men's</div>
+                <div>100.82</div>
+              </div>
+
+            </div>
+
+
+            <div className="bottom__cadre">
+
+              <div className="cadre__detail">
+                <div>Total order amount</div>
+                <div>100.82</div>
+              </div>
+
+              <div className="cadre__detail">
+                <div>Commission</div>
+                <div>0.26</div>
+              </div>
+
+              <div className="cadre__detail">
+                <div>Estimated return</div>
+                <div>101.08</div>
+              </div>
+            </div>
+          </div>)}
+
+        </div>
+
+
+
+
+        <div className="no__moredata">
+          <span>no more data</span>
+        </div>
       </div>
 
     </div>

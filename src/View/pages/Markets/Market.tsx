@@ -103,8 +103,6 @@ function Market() {
                       <div className="description__value"> 0.26%</div>
                     </div>
 
-
-
                   </div>
                 </div>
 

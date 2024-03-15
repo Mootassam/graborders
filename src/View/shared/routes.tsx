@@ -16,8 +16,8 @@ const privateRoutes = [
     exact: true,
   },
   {
-    path: "/trades",
-    loader: () => import("../pages/Trades/TradesPage"),
+    path: "/grap",
+    loader: () => import("../pages/Grap/GrapPage"),
     exact: true,
   },
 

@@ -21,7 +21,7 @@ function TabBottomNavigator() {
 
     {
       icon: "fas fa-exchange-alt",
-      path: "/trades",
+      path: "/grap",
       name: "Grap",
     },
 
