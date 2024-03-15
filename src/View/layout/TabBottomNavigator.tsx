@@ -27,7 +27,7 @@ function TabBottomNavigator() {
 
     {
       icon: "fas fa-newspaper",
-      path: "/explore",
+      path: "/Online",
       name: "Online",
     },
 

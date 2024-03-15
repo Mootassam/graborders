@@ -7,21 +7,20 @@ function Grappage() {
     <div className="grap__order"></div>
 
     <div className="button__grap">
-
       <div className="button__upgrade">
         Deposit Upgrade
       </div>
       <div className="grap">
         Automatic grab
       </div>
-
     </div>
 
     <div className="order__comission">
       <div className="today__achievements">
         <div>Today's achievements</div>
-        <div className="achivements__refresh"> refresh</div>
-
+        <div className="achivemnts__refreshe">
+          <i className="fa-solid fa-rotate-right click"></i>
+        </div>
       </div>
 
       <div className="achievements__group">

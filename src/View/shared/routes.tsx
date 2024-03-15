@@ -22,8 +22,8 @@ const privateRoutes = [
   },
 
   {
-    path: "/explore",
-    loader: () => import("../pages/Explore/ExplorePage"),
+    path: "/Online",
+    loader: () => import("../pages/Online/Online"),
     exact: true,
   },
 
@@ -48,11 +48,7 @@ const screenRoutes = [
     loader: () => import("../pages/Coin/coin"),
     exact: true,
   },
-  {
-    path: "/explore/detail/:id",
-    loader: () => import("../pages/Explore/View/viewdetailTopic"),
-    exact: true,
-  },
+
 ];
 const publicRoutes = [
   {
