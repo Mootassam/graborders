@@ -247,11 +247,14 @@ td {
   align-items: center;
   padding: 8px 10px;
   width: 100%;
-  background-color: #6f55ca;
+  background-color: #ffd22c;
   margin-top: 10px;
   border-radius: 10px;
 }
 
+.speaker {
+  color: #454960;
+}
 
 
 .advertise__buttons {
@@ -264,7 +267,7 @@ td {
 
 .button__deposit,
 .button__withdraw {
-  background-color: #b1b4c3;
+
   width: 50%;
   font-weight: bold;
   align-items: center;
@@ -272,6 +275,26 @@ td {
   display: flex;
   padding: 13px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.button__deposit {
+  background-color: #4caf50;
+  /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button__withdraw {
+  background-color: rgb(19, 54, 75);
+  /* Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -661,11 +684,11 @@ li {
 
 img {
   max-width: 100%;
- 
+
   object-fit: cover;
 }
 
-.thumbs { 
+.thumbs {
   display: none;
 }
 
@@ -690,6 +713,7 @@ img {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(-100%);
   }
