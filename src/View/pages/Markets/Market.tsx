@@ -22,7 +22,11 @@ function Market() {
       }}
     >
 
-      <div className="advertise__header"></div>
+      <div className="advertise__header">
+
+
+        <img src="/images/home/1.png" alt="" className="image" />
+      </div>
 
       <div className="advertise__speaker">
         <div>

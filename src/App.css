@@ -607,6 +607,8 @@ li {
 .contact__online {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  text-align: center;
   background-color: whitesmoke;
   border-radius: 10px;
   max-width: 165px;
@@ -655,4 +657,10 @@ li {
   align-items: center;
   gap: 20px;
   margin-bottom: 25px;
+}
+
+img {
+  max-width: 100%;
+ 
+  object-fit: cover;
 }
