@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import WachListMode from "./WachListMode";
-import PortfolioMode from "./PortfolioMode";
+
 function Portfolio() {
-  const [active, setActive] = useState("portfolio");
 
   return (
     <div>

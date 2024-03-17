@@ -47,6 +47,7 @@ function TabBottomNavigator() {
         >
           <div className="singleTab">
             <i
+              style={{ fontSize: 20 }}
               className={`${item.icon} ${isActive(item.path) && "active"}`}
             ></i>
             <p className={`text__link ${isActive(item.path) && "active"}`}>
