@@ -18,8 +18,8 @@ function Portfolio() {
           <div className="order__background">
 
             <div className="order__remaining">
-              <label htmlFor=""> Remaining Availalbe assets</label>
-              <span>5000.32</span>
+              <label htmlFor="" className="remaining__assets"> Remaining Availalbe assets</label>
+              <span className="remaining__amount">5000.32</span>
             </div>
 
 
@@ -31,7 +31,7 @@ function Portfolio() {
 
           <div className="list__actions">
             <div>
-              <span>All</span>
+              <span className="active__order">All</span>
             </div>
             <div>             <span>Pending</span></div>
             <div>             <span>Completed</span></div>

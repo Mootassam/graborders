@@ -43,7 +43,6 @@ function Market() {
             <img src="/images/home/3.png" alt="" className="image" />
           </div>
         </Carousel>
-
       </div>
 
       <div className="advertise__speaker">
