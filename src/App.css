@@ -299,7 +299,7 @@ td {
 }
 
 .action__cirlce {
-  background-color: #1636eb;
+  background-color: #24557f;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -333,7 +333,7 @@ td {
 .content__vip {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
   margin-top: 10px;
 }
 
@@ -718,4 +718,8 @@ img {
   to {
     transform: translateX(-100%);
   }
+}
+
+.action__label {
+  font-size: 14px;
 }
