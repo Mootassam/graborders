@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 function Market() {
   const [response, setReponse] = useState([]);
   const searchAllCoins = async () => {
@@ -23,9 +23,18 @@ function Market() {
     >
 
       <div className="advertise__header">
+        <Carousel>
+          <div>
+            <img src="/images/home/1.png" alt="" className="image" />
+          </div>
+          <div>
+            <img src="/images/home/2.png" alt="" className="image" />
+          </div>
+          <div>
+            <img src="/images/home/3.png" alt="" className="image" />
+          </div>
+        </Carousel>
 
-
-        <img src="/images/home/1.png" alt="" className="image" />
       </div>
 
       <div className="advertise__speaker">
