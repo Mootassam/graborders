@@ -98,15 +98,10 @@ function Market() {
           <div className="content__vip">
             {Array.from({ length: 6 }).map(() => <>
               <div className="vip">
-
                 <div className="vip__image"></div>
-
                 <div className="vip__text">
                   <div className="vip__title">Shopee</div>
-
-
                   <div className="vip__details">
-
                     <div className="vip__description">
                       <div className="description__key">Entry Limit:</div>
                       <div className="description__value"> 0.00</div>
@@ -123,19 +118,10 @@ function Market() {
                       <div className="description__key">Comimsion rate:</div>
                       <div className="description__value"> 0.26%</div>
                     </div>
-
                   </div>
                 </div>
-
-
-
               </div></>)}
-
-
-
           </div>
-
-
         </div>
 
 

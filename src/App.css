@@ -428,10 +428,13 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .order__record {
   color: white;
+  font-size: 21px;
+  margin: 10px 10px;
 }
 
 .order__background {
@@ -441,7 +444,10 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: auto
+  gap: auto;
+  border-radius: 10px;
+  position: relative;
+  bottom: -1px
 }
 
 .order__remaining {
@@ -453,17 +459,18 @@ td {
 .list__actions {
   display: flex;
   justify-content: space-between;
-
-  background-color: #ef2626;
+  background-color: #ffff;
   padding: 10px 20px;
   color: white;
   font-weight: bold;
-  margin-top: 12px;
+  margin-top: 20px;
+
 }
 
 .list__actions span {
   font-size: small;
   cursor: pointer;
+  color: #000;
 }
 
 .list__product {
