@@ -12,6 +12,17 @@ function Market() {
 
   useEffect(() => { }, [response]);
 
+
+  const NewsTicker = ({ text }) => {
+    return (
+      <div className="news-ticker-container">
+        <div className="news-ticker">
+          <span>{text}</span>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div
       style={{
@@ -39,9 +50,8 @@ function Market() {
         <div>
           <i className="fa-solid fa-volume-off speaker"></i>
         </div>
-        <div className="speaker__text">
-          ****na agent reached 3000 direct active
-        </div>
+        <NewsTicker text="****na agent reached 3000 direct active 3211321 ****na agent reached 3000 direct active 321132" />
+
       </div>
 
 

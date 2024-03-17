@@ -668,3 +668,29 @@ img {
 .thumbs { 
   display: none;
 }
+
+
+
+.news-ticker-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-ticker {
+  white-space: nowrap;
+  animation: ticker 10s linear infinite;
+}
+
+.news-ticker span {
+  display: inline-block;
+  padding-right: 100%;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
