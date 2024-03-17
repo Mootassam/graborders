@@ -664,3 +664,7 @@ img {
  
   object-fit: cover;
 }
+
+.thumbs { 
+  display: none;
+}
