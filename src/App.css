@@ -285,7 +285,6 @@ td {
 .adverstise__actions {
   align-items: center;
   text-align: center;
-  background-color: #b1b4c3;
   margin-top: 10px;
   padding: 10px 10px;
   display: flex;
@@ -326,7 +325,7 @@ td {
 .vip__image {
   background-color: #6f55ca;
   width: 50%;
-  height: 100px;
+
   border-radius: 10px;
 }
 
@@ -640,6 +639,7 @@ li {
   font-size: 14px;
   background-color: white;
   text-align: center;
+  cursor: pointer;
 }
 
 .profile__vip {
