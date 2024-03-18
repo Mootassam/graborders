@@ -833,3 +833,10 @@ img {
   font-size: 15px;
   font-weight: 500;
 }
+
+/* styling the home page  */
+
+.home__section {
+  padding-left: 2%;
+  padding-right: 2%;
+}
