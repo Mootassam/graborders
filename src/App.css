@@ -675,12 +675,17 @@ td {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin: 20px 0;
 }
 
 .order__comission {
   background-color: white;
   padding: 10px 20px;
   margin: 20px 0;
+}
+
+.button__upgrade {
+  background-color: #FFB744 !important;
 }
 
 .button__upgrade,
@@ -690,10 +695,14 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
-  margin-top: 10px;
+  padding: 12px 15px;
   cursor: pointer;
   color: white;
+  border-radius: 13px;
+}
+
+.grap {
+  background-color: #3887FE !important;
 }
 
 .today__achievements {
