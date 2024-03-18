@@ -423,6 +423,14 @@ td {
   margin-bottom: 10px;
 }
 
+.header_order{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
 .order__header {
   background-color: #00984E;
   width: 100%;
@@ -432,10 +440,8 @@ td {
   align-items: center;
   position: relative;
   clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 100% 75%, 100% 0%, 50% 0%);
-
-
-
 }
+
 
 .order__record {
   color: white;
@@ -446,14 +452,15 @@ td {
 .order__background {
   background-color: white;
   width: 90%;
-  height: 200px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: auto;
   border-radius: 10px;
-  position: relative;
-  bottom: -1px
+  position: absolute;
+  top: 47px;
+
 }
 
 .order__remaining {

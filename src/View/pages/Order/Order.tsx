@@ -10,20 +10,17 @@ function Portfolio() {
           flexDirection: 'column'
         }}
       >
-
-        <div className="order__header">
-          <div className="order__record">
-            Order Record
+        <div className="header_order">
+          <div className="order__header">
+            <div className="order__record">
+              Order Record
+            </div>
           </div>
           <div className="order__background">
-
             <div className="order__remaining">
               <label htmlFor="" className="remaining__assets"> Remaining Availalbe assets</label>
               <span className="remaining__amount">5000.32</span>
             </div>
-
-
-
           </div>
         </div>
 
