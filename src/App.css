@@ -518,10 +518,19 @@ td {
 
 }
 
+
+.cadre__detail>div:nth-child(2) {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 35px;
+
+}
+
 .product__image {
   background-color: #EDF1F7;
   width: 100%;
-  
+
   margin: 10px 0;
   padding: 10px;
   display: flex;
@@ -534,6 +543,7 @@ td {
   flex-direction: column;
   gap: 15px;
   width: 100%;
+  padding-right: 15px;
 }
 
 .no__moredata {
@@ -541,7 +551,7 @@ td {
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .image__ {
