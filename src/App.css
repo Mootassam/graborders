@@ -682,7 +682,7 @@ td {
   background-color: white;
   padding: 10px 20px;
   margin: 20px 0;
-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .button__upgrade {
@@ -954,3 +954,4 @@ img {
   margin-bottom: 10px;
   border-radius: 0px 15px 0px 15px;
 }
+

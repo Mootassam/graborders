@@ -26,7 +26,7 @@ function Grappage() {
 
       <div className="grap__slots"></div>
 
-      <div>
+      <div style={{ paddingTop: 10 }}>
         <span className="exclusive__chaneels">Exclusive channel for exclsuive members
         </span>
       </div>
@@ -83,6 +83,8 @@ function Grappage() {
         </li>
       </ul>
     </div>
+
+    <div className="modal__grap"></div>
   </div>
 
 }
