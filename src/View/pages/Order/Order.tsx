@@ -42,16 +42,20 @@ function Portfolio() {
         <div className="list__product">
 
           {Array.from(({ length: 5 })).map(() => <div className="single__product">
-            <div>Order Time: 2022-06-27 14:03:52</div>
-            <div>Order Number: N02206271321321354165</div>
-
+            <div className="order__time">
+              <div>Order Time: 2022-06-27 14:03:52</div>
+              <div>Order Number: N02206271321321354165</div>
+            </div>
             <div className="product__image">
 
               <div className="image__"></div>
 
               <div className="product__detail">
-                <div>Under Armour Men's</div>
-                <div>100.82</div>
+                <div className="detail__name">Van Hueusen Men's Slim Fir Never Tuck Short Sleeve Button Down Shirt</div>
+                <div className="detail__price">
+                  <div> 100.82</div>
+                  <div>X 1</div>
+                </div>
               </div>
 
             </div>
