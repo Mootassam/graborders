@@ -811,7 +811,18 @@ li {
 
 .online__image {}
 
+.online__footer {
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+  justify-content: center;
+}
 
+.contact__now {
+  background-color: #00984E;
+  padding: 10px;
+  color: white;
+}
 
 .profile__content {
   display: grid;

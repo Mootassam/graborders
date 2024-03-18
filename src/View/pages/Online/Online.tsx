@@ -23,7 +23,9 @@ function Online() {
           <div className="online__image">
             <img src="/images/online/customer.jpg" alt="" />
           </div>
-          <div className="online__footer"> Number phone of whatsApp</div>
+          <div className="online__footer">
+            <div className="contact__now"> Contact now </div>
+          </div>
         </div>)}
 
       </div>
