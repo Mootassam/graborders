@@ -27,8 +27,8 @@ function Portfolio() {
         <div className="order__list">
 
           <div className="list__actions">
-            <div>
-              <span className="active__order">All</span>
+            <div className="active__order">
+              <span className="">All</span>
             </div>
             <div>             <span>Pending</span></div>
             <div>             <span>Completed</span></div>

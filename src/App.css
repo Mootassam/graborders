@@ -423,7 +423,7 @@ td {
   margin-bottom: 10px;
 }
 
-.header_order{ 
+.header_order {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,22 +470,28 @@ td {
 }
 
 .list__actions {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   background-color: #ffff;
-  padding: 17px 20px;
+  padding: 17px 20px 0px 20px;
   color: white;
   font-weight: bold;
   margin-top: 20px;
+  align-items: center;
 
-
+}
+.list__actions > div { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 17px;
 }
 
 .list__actions span {
   font-size: small;
   cursor: pointer;
   color: #939393;
-  padding-bottom: 17px;
+
 }
 
 .active__order {
