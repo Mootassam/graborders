@@ -944,3 +944,12 @@ img {
   font-weight: 600;
   font-size: 20px;
 }
+
+.rules__title {
+  background-color: #FFB744 !important;
+  padding: 10px;
+  width: max-content;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 0px 15px 0px 15px;
+}

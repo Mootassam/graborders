@@ -73,11 +73,14 @@ function Grappage() {
 
 
     <div className="rules__description">
+      <div className="rules__title">Rules Description</div>
       <ul className="rules__list">
         <li>(1) Every members from this room be able to grap 55 orders per day </li>
         <li>(2) The commission of the purchase would be 0.28% of each order amount</li>
         <li>(3) The system automatic dispatch the products throught the cloud. </li>
-        <li>(4) if the order is not confirmed and submitted bu the member after the product successfully</li>
+        <li>(4) if the order is not confirmed and submitted bu the member after the product successfully
+          dispatch, he/she might not be able to continue to grab the orders. The member need to process with the previous order to continue with the task.
+        </li>
       </ul>
     </div>
   </div>
