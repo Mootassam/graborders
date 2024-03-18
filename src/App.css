@@ -775,9 +775,9 @@ li {
 /* Styling the online page  */
 
 .online__header {
-  background-color: #2e3142;
+  background-color: #D6E4FA;
   width: 100%;
-  color: whitesmoke;
+  color: #1A283E;
   padding: 20px;
 }
 
@@ -787,6 +787,8 @@ li {
   gap: 30px;
   margin-top: 20px;
   justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .contact__online {
@@ -794,22 +796,22 @@ li {
   flex-flow: column;
   justify-content: center;
   text-align: center;
-  background-color: whitesmoke;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 0 0 10px 0;
   max-width: 165px;
 }
 
 .list__header {
-  background-color: yellowgreen !important;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  font-weight: 500;
+  padding: 10px 0;
 }
 
-.online__image {
-  background-color: #203040 !important;
-}
+.online__image {}
 
-.online__footer {
-  background-color: #6f55ca !important;
-}
+
 
 .profile__content {
   display: grid;
@@ -954,4 +956,3 @@ img {
   margin-bottom: 10px;
   border-radius: 0px 15px 0px 15px;
 }
-
