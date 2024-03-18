@@ -807,6 +807,7 @@ li {
   background-color: white;
   font-weight: 500;
   padding: 10px 0;
+  display: flex;
 }
 
 .online__image {}
@@ -816,12 +817,14 @@ li {
   flex-flow: column;
   align-self: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .contact__now {
   background-color: #00984E;
   padding: 10px;
   color: white;
+  font-size: 15px;
 }
 
 .profile__content {

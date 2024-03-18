@@ -19,12 +19,14 @@ function Online() {
       <div className="contact__list">
 
         {Array.from({ length: 5 }).map(() => <div className="contact__online">
-          <div className="list__header"> WhatsApp online </div>
+          <div className="list__header">
+
+            WhatsApp online </div>
           <div className="online__image">
             <img src="/images/online/customer.jpg" alt="" />
           </div>
           <div className="online__footer">
-            <div className="contact__now"> Contact now </div>
+            <div className="contact__now">  <i className="fa-brands fa-whatsapp" style={{ fontSize: 18 }}></i> Contact now </div>
           </div>
         </div>)}
 
