@@ -5,7 +5,7 @@ import "./styles/style.css";
 function LayoutPage(props) {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="children__content">{props.children}</div>
       <TabBottomNavigator />
     </div>
