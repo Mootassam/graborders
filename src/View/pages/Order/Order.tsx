@@ -46,6 +46,8 @@ function Portfolio() {
               <div>Order Time: 2022-06-27 14:03:52</div>
               <div>Order Number: N02206271321321354165</div>
             </div>
+            <div className="badge__ completed">
+              <label>Completed</label></div>
             <div className="product__image">
 
               <div className="image__"></div>
