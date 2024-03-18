@@ -504,17 +504,19 @@ td {
   width: 120px;
   height: 40px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: -17px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  border-radius: 8px;
 }
 
 .completed {
   background-color: #059E54;
   font-size: 14px;
+  transform: rotate(31deg);
 }
 
 .pending {
