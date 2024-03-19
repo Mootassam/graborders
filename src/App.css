@@ -495,6 +495,7 @@ td {
 
 }
 
+
 .active__order {
   color: #059E54 !important;
   border-bottom: 3px solid #059E54;
@@ -542,13 +543,12 @@ td {
 .pending {
   background-color: orange;
   font-size: 14px;
-  transform: rotate(31deg);
+  transform: rotate(43deg);
 }
-
 .canceled {
   background-color: rgb(237, 80, 80);
   font-size: 14px;
-  transform: rotate(31deg);
+  transform: rotate(43deg);
 }
 
 .bottom__cadre {
