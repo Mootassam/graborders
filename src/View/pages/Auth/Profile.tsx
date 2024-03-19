@@ -31,19 +31,21 @@ function Profile() {
           <div>security</div>
         </div>
         <div className="profile__link">
-          <div></div>
+          <div><i className="fa-solid fa-arrow-right-arrow-left profile__icon"></i></div>
           <div>Transactions</div>
         </div>
         <div className="profile__link">
-          <div></div>
+          <div>
+            <i className="fa-solid fa-message profile__icon"></i>
+          </div>
           <div>Contact us</div>
         </div>
         <div className="profile__link">
-          <div></div>
+          <div><i className="fa-solid fa-wallet profile__icon"></i></div>
           <div>Bind Wallet</div>
         </div>
         <div className="profile__link">
-          <div></div>
+          <div><i className="fa-solid fa-volume-low profile__icon"></i></div>
           <div>Sound Settings</div>
         </div>
         <div className="profile__link">
