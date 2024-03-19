@@ -1032,11 +1032,33 @@ img {
 
 .profile__subheader {
   background-color: #FEEFE0;
-  width: 60%;
-  padding: 10px;
+  width: calc(100% - 7%) ;
+  padding: 10px 10px 40px 10px;
   height: auto;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap:20px
 }
 
 .subheader__balance {
   color: #8E6C50;
+}
+
+.profile__balance {
+  color: #6B4E38;
+}
+
+.profile__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.profile__amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
