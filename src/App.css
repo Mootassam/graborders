@@ -830,8 +830,7 @@ li {
 }
 
 .app__profile {
-  padding-left: 2%;
-  padding-right: 2%;
+
 }
 
 .profile__content {
@@ -908,7 +907,6 @@ li {
   align-items: center;
   gap: 20px;
   margin-bottom: 25px;
-  background-color: white;
   padding: 10px 20px;
 }
 
@@ -1070,4 +1068,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.profile__arc {
+  background-color: white;
+  padding-bottom: 40px;
+ 
 }
