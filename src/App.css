@@ -1045,10 +1045,12 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: center;
 }
 
 .subheader__balance {
   color: #8E6C50;
+  font-size: 20px;
 }
 
 .profile__balance {
@@ -1068,6 +1070,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 20px
 }
 
 .profile__arc {
