@@ -54,9 +54,7 @@ function Grappage() {
           <div className="line">{results[1]}</div>
           <div className="line">{results[2]}</div>
         </div>
-        <button onClick={spin} disabled={spinning}>
-          {spinning ? 'Spinning...' : 'Spin'}
-        </button>
+     
 
         <div style={{ paddingTop: 10 }}>
           <span className="exclusive__chaneels">Exclusive channel for exclsuive members
@@ -66,12 +64,12 @@ function Grappage() {
       </div>
 
       <div className="button__grap">
-        <div className="button__upgrade">
+        <button className="button__upgrade">
           Deposit Upgrade
-        </div>
-        <div className="grap">
-          Automatic grab
-        </div>
+        </button>
+        <button className="grap" onClick={spin} disabled={spinning}>
+          {spinning ? 'Spinning...' : 'Automatic grab'}
+        </button>
       </div>
 
       <div className="order__comission">
