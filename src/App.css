@@ -1080,3 +1080,50 @@ img {
   border-radius: 0% 0% 10% 10%;
 
 }
+
+.machine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.line {
+  font-size: 3rem;
+  margin: 10px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.spin .line {
+  animation: spinAnimation 2s infinite;
+}
+
+@keyframes spinAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
