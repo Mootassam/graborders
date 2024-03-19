@@ -545,6 +545,7 @@ td {
   font-size: 14px;
   transform: rotate(43deg);
 }
+
 .canceled {
   background-color: rgb(237, 80, 80);
   font-size: 14px;
@@ -1103,6 +1104,7 @@ img {
   0% {
     transform: rotateX(0deg);
   }
+
   100% {
     transform: rotateX(360deg);
   }
@@ -1126,4 +1128,25 @@ button:hover {
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+.slots {
+  width: calc(3.5 * var(--icon-width));
+  height: calc(3 * var(--icon-height));
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px auto;
+
+  
+}
+
+.reel {
+
+  border: 1px solid black;
+  width: var(--icon-width);
+  height: calc(3 * var(--icon-height));
+  background-image: url(https://assets.codepen.io/439000/slotreel.webp);
+  background-repeat: repeat-y;
+  background-position: 0 0;
 }

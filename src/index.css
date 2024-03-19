@@ -8,6 +8,12 @@
   font-family: Inter;
 }
 
+:root {
+  --icon-width: 79px;
+  --icon-height: 79px;
+  --max-lines: 9;
+}
+
 img {
   width: 100%;
   top: 0px;

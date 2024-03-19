@@ -2,27 +2,52 @@ import React, { useEffect, useState } from "react";
 import "../styles/styles.css";
 function Grappage() {
 
-  const symbols = ['🍒', '🍋', '🍇', '🍊', '🍉']; // Add more symbols as needed
+  const icon_width = 79;
+  const icon_height = 79;
+  const num_icons = 9;
+  const time_per_icons = 100;
+  const indexes = [0, 0, 0];
 
-  const [results, setResults] = useState(['', '', '']);
-  const [spinning, setSpinning] = useState(false);
 
-  const spin = () => {
-    if (!spinning) {
-      setSpinning(true);
-      const spins = Array.from({ length: 15 }, (_, index) => index + 1);
-      let count = 0;
-      const spinInterval = setInterval(() => {
-        const newResults = results.map(() => symbols[Math.floor(Math.random() * symbols.length)]);
-        setResults(newResults);
-        count++;
-        if (count === spins.length) {
-          clearInterval(spinInterval);
-          setSpinning(false);
-        }
-      }, 150);
-    }
-  };
+  const roll = (reel, offset = 0) => {
+    const delta = (offset + 2) * num_icons + Math.round(Math.random() * num_icons);
+    const style = getComputedStyle(reel),
+      backgroundPositionY = parseFloat(style['background-position-y']);
+    return new Promise((resolve, reject) => {
+      reel.style.transation = `background-position-y ${8 + delta * time_per_icons}ms`;
+      reel.style.backgroundPositionY = `${backgroundPositionY + delta * icon_height}px`;
+
+      setTimeout(() => {
+        resolve(delta);
+      }, 8 + delta * time_per_icons);
+    })
+
+
+  }
+
+  const rollAll = () => {
+    const reelsList = document.querySelectorAll('.slots > .reel');
+    reelsList.forEach((reel, i) => {
+      roll(reel, i).then(() => {
+      })
+    })
+
+  }
+
+
+
+
+
+
+
+  /**
+   * Roll all reels, when promise resolves roll again
+   */
+
+
+  // Kickoff
+
+
 
 
   return <>
@@ -48,13 +73,15 @@ function Grappage() {
         </div>
 
 
-
-        <div className={`machine ${spinning ? 'spin' : ''}`}>
-          <div className="line">{results[0]}</div>
-          <div className="line">{results[1]}</div>
-          <div className="line">{results[2]}</div>
+        <div className="slots">
+          <div className="reel"></div>
+          <div className="reel"></div>
+          <div className="reel"></div>
         </div>
-     
+
+        <div id="debug" className="debug"></div>
+
+
 
         <div style={{ paddingTop: 10 }}>
           <span className="exclusive__chaneels">Exclusive channel for exclsuive members
@@ -67,8 +94,8 @@ function Grappage() {
         <button className="button__upgrade">
           Deposit Upgrade
         </button>
-        <button className="grap" onClick={spin} disabled={spinning}>
-          {spinning ? 'Spinning...' : 'Automatic grab'}
+        <button className="grap" onClick={() => rollAll()}>
+          Automatic grab
         </button>
       </div>
 
