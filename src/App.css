@@ -716,7 +716,7 @@ td {
 .achievements__group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 21px
+  gap: 8px
 }
 
 .group__comission {
@@ -782,14 +782,15 @@ li {
 }
 
 .contact__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 20px;
   justify-content: space-between;
   padding-left: 2%;
   padding-right: 2%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contact__online {
@@ -799,7 +800,7 @@ li {
   text-align: center;
   background-color: #fff;
   border-radius: 0 0 10px 0;
-  max-width: 165px;
+
 }
 
 .list__header {
@@ -811,7 +812,7 @@ li {
   display: flex;
 }
 
-.online__image {}
+
 
 .online__footer {
   display: flex;
