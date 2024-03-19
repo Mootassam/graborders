@@ -858,6 +858,7 @@ li {
 
 .profile__icon {
   font-size: 29px;
+  color: darkslategrey;
 }
 
 .profile__photo {
