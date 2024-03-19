@@ -829,9 +829,6 @@ li {
   font-size: 15px;
 }
 
-.app__profile {
-
-}
 
 .profile__content {
   display: grid;
@@ -1075,5 +1072,6 @@ img {
 .profile__arc {
   background-color: white;
   padding-bottom: 40px;
- 
+  border-radius: 0% 0% 10% 10%;
+
 }
