@@ -11,19 +11,31 @@ function Grappage() {
 
   const roll = (reel, offset = 0) => {
     const delta = (offset + 2) * num_icons + Math.round(Math.random() * num_icons);
-    const style = getComputedStyle(reel),
-      backgroundPositionY = parseFloat(style['background-position-y']);
+
     return new Promise((resolve, reject) => {
-      reel.style.transation = `background-position-y ${8 + delta * time_per_icons}ms`;
-      reel.style.backgroundPositionY = `${backgroundPositionY + delta * icon_height}px`;
 
+      const style = getComputedStyle(reel);
+      const backgroundPositionY = parseFloat(style["background-position-y"]);
+      const targetBackgroundPositionY = backgroundPositionY + delta * icon_height;
+      const normTargetBackgroundPositionY = targetBackgroundPositionY % (num_icons * icon_height);
       setTimeout(() => {
-        resolve(delta);
-      }, 8 + delta * time_per_icons);
-    })
+        // Set transition properties ==> https://cubic-bezier.com/#.41,-0.01,.63,1.09
+        reel.style.transition = `background-position-y ${(8 + 1 * delta) * time_per_icons}ms cubic-bezier(.41,-0.01,.63,1.09)`;
+        // Set background position
+        reel.style.backgroundPositionY = `${backgroundPositionY + delta * icon_height}px`;
+      }, offset * 150);
 
+      // After animation
+      setTimeout(() => {
+        // Reset position, so that it doesn't get higher without limit
+        reel.style.transition = `none`;
+        reel.style.backgroundPositionY = `${normTargetBackgroundPositionY}px`;
+        // Resolve this promise
+        resolve(delta % num_icons);
+      }, (8 + 1 * delta) * time_per_icons + offset * 150);
 
-  }
+    });
+  };
 
   const rollAll = () => {
     const reelsList = document.querySelectorAll('.slots > .reel');
