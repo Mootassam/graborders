@@ -838,6 +838,8 @@ li {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 40px;
+  padding-left: 2%;
+  padding-right: 2%;
 
 
 }
@@ -846,10 +848,10 @@ li {
   border: 1px solid #CFD1D5;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
   justify-content: start;
   align-items: center;
-  padding: 14px;
+  padding: 10px;
   font-size: 14px;
   background-color: white;
   text-align: center;
@@ -858,7 +860,7 @@ li {
 }
 
 .profile__icon {
-  font-size: 40px;
+  font-size: 29px;
 }
 
 .profile__photo {
