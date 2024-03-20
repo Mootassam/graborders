@@ -39,11 +39,21 @@ function Grappage() {
 
   const rollAll = () => {
     const reelsList = document.querySelectorAll('.slots > .reel');
-    reelsList.forEach((reel, i) => {
-      roll(reel, i).then(() => {
-      })
-    })
+    Promise.all(Array.from(reelsList).map((reel, i) => roll(reel, i)))
+      .then((deltas) => {
+        const slots = document.querySelector(".borders");
+        if (slots) { slots.classList.add("win1"); }
+        setTimeout(() => {
+          if (slots) {
+            slots.classList.remove("win1")
+          }
+        }, 2000)
 
+
+      })
+      .catch((error) => {
+        // Handle errors
+      });
   }
 
 
@@ -84,15 +94,15 @@ function Grappage() {
           </div>
         </div>
 
+        <div className="borders">
+          <div className="slots">
+            <div className="reel"></div>
+            <div className="reel"></div>
+            <div className="reel"></div>
+          </div>
 
-        <div className="slots">
-          <div className="reel"></div>
-          <div className="reel"></div>
-          <div className="reel"></div>
+
         </div>
-
-        <div id="debug" className="debug"></div>
-
 
 
         <div style={{ paddingTop: 10 }}>
