@@ -179,6 +179,63 @@ function Grappage() {
       <div className="modal__grap">
         <div className="modal__product">
 
+
+          <div className="single__product">
+
+            <div className="single__header">
+              Shopee
+            </div>
+
+            <div className="order__time">
+              <div>Order Time: 2022-06-27 14:03:52</div>
+              <div>Order Number: N02206271321321354165</div>
+            </div>
+            <div className="badge__ pending">
+              <label>Completed</label></div>
+            <div className="product__image">
+
+              <div className="image__"></div>
+
+              <div className="product__detail">
+                <div className="detail__name">Van Hueusen Men's Slim Fir Never Tuck Short Sleeve Button Down Shirt</div>
+                <div className="detail__price">
+                  <div> 100.82</div>
+                  <div>X 1</div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div className="bottom__cadre">
+
+              <div className="cadre__detail">
+                <div>Total order amount</div>
+                <div>100.82</div>
+              </div>
+
+              <div className="cadre__detail">
+                <div>Commission</div>
+                <div>0.26</div>
+              </div>
+
+              <div className="cadre__detail">
+                <div>Estimated return</div>
+                <div>101.08</div>
+              </div>
+            </div>
+
+
+            <div className="bottom__submit">
+              <div className="submit__ligne"></div>
+              <div className="sumbit__buttons">
+                <div className="cancel__product" onClick={() => hideModal()}>Cancel</div>
+                <div className="submit__product">Submit</div>
+              </div>
+
+
+            </div>
+          </div>
           <i className="fa-solid fa-xmark xmark" onClick={() => hideModal()}></i>
 
         </div>
