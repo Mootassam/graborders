@@ -1179,12 +1179,12 @@ button:disabled {
   transform: translate(200%, -50%);
 }
 
-.borders .reel {
+.reel {
   position: relative;
   border: 1px solid rgba(black, 0.3);
   width: var(--icon-width);
   height: calc(3 * var(--icon-height));
-  background-image: url(https://assets.codepen.io/439000/slotreel.webp);
+  background-image: url('/images/grap/grap.png');
   background-repeat: repeat-y;
   background-position: 0 0;
   border-radius: 3px;
