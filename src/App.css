@@ -1141,6 +1141,7 @@ button:disabled {
   justify-content: center;
   padding: calc(0.3 * var(--icon-width));
   margin: auto;
+  width: calc(4 * var(--icon-width));
   background: linear-gradient(45deg, grey 0%, lightgray 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.6);
   border-right: 1px solid rgba(255, 255, 255, 0.6);
@@ -1148,10 +1149,7 @@ button:disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
-  background-image: url('/images/grap/backgroud.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
 
 .slots {
