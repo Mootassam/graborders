@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/styles.css";
 function Grappage() {
+
+
 
   const icon_width = 79;
   const icon_height = 79;
@@ -42,7 +44,14 @@ function Grappage() {
     Promise.all(Array.from(reelsList).map((reel, i) => roll(reel, i)))
       .then((deltas) => {
         const slots = document.querySelector(".borders");
-        if (slots) { slots.classList.add("win1"); }
+        const modal = document.querySelector('.modal__grap');
+        if (slots) {
+          slots.classList.add("win1");
+          setTimeout(() => {
+            modal?.classList.add('show')
+
+          }, 2000);
+        }
         setTimeout(() => {
           if (slots) {
             slots.classList.remove("win1")
@@ -57,6 +66,12 @@ function Grappage() {
   }
 
 
+  const hideModal = () => {
+    const modal = document.querySelector('.modal__grap');
+    if (modal) {
+      modal?.classList.remove('show')
+    }
+  }
 
 
 
@@ -161,7 +176,14 @@ function Grappage() {
         </ul>
       </div>
 
-      <div className="modal__grap"></div>
+      <div className="modal__grap">
+        <div className="modal__product">
+
+          <i className="fa-solid fa-xmark xmark" onClick={() => hideModal()}></i>
+
+        </div>
+
+      </div>
     </div>
   </>
 

@@ -761,6 +761,7 @@ li {
   margin-bottom: 80px;
   padding-left: 2%;
   padding-right: 2%;
+  position: relative;
 }
 
 .rules__list {
@@ -1160,7 +1161,7 @@ button:disabled {
 }
 
 .slots .reel {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1 solid rgba(0, 0, 0, 0.3);
 }
 
 
@@ -1198,7 +1199,6 @@ button:disabled {
 
 .reel {
   position: relative;
-  border: 1px solid rgba(black, 0.3);
   width: var(--icon-width);
   height: calc(1.9 * var(--icon-height));
   background-image: url('/images/grap/grap.png');
@@ -1251,4 +1251,55 @@ button:disabled {
     background: linear-gradient(45deg, grey 0%, lightgrey 100%);
     box-shadow: -2px 2px 3px rgba(black, 0.3);
   }
+}
+
+.modal__grap {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(15, 14, 14, 0.5);
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  display: none;
+  /* Shadow effect */
+
+
+}
+
+.modal__product {
+  z-index: 200;
+  position: fixed;
+  z-index: 200;
+  width: calc(100% - 10%);
+  border-radius: 10px;
+  height: 200px;
+  background-color: #bdcbdb;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 100px 100px 1000px 1000px rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+.show {
+  display: block;
+}
+
+.xmark {
+  position: absolute;
+  font-size: 17px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  color: white;
+  cursor: pointer;
+  bottom: -90px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
