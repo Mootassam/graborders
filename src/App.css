@@ -1273,7 +1273,6 @@ button:disabled {
   width: calc(100% - 10%);
   border-radius: 10px;
   height: 200px;
-  background-color: #bdcbdb;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);

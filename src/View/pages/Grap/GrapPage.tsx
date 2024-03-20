@@ -191,7 +191,7 @@ function Grappage() {
               <div>Order Number: N02206271321321354165</div>
             </div>
             <div className="badge__ pending">
-              <label>Completed</label></div>
+              <label>Pending</label></div>
             <div className="product__image">
 
               <div className="image__"></div>
@@ -236,7 +236,6 @@ function Grappage() {
 
             </div>
           </div>
-          <i className="fa-solid fa-xmark xmark" onClick={() => hideModal()}></i>
 
         </div>
 
