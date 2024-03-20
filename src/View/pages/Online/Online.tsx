@@ -20,7 +20,6 @@ function Online() {
 
         {Array.from({ length: 5 }).map(() => <div className="contact__online">
           <div className="list__header">
-
             WhatsApp online </div>
           <div className="online__image">
             <img src="/images/online/customer.jpg" alt="" />
