@@ -78,7 +78,7 @@ function Grappage() {
 
       <div className="grap__order">
 
-        <div>
+        <div className="order__top">
 
           <div className="first__order">
             <div className="vip__title">Shopee</div>
