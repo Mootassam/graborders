@@ -1183,10 +1183,10 @@ button:disabled {
   position: relative;
   border: 1px solid rgba(black, 0.3);
   width: var(--icon-width);
-  height: calc(3 * var(--icon-height));
+  height: calc(1.9 * var(--icon-height));
   background-image: url('/images/grap/grap.png');
   background-repeat: repeat-y;
-  background-position: 0 0;
+  background-position: 0 -45px;
   border-radius: 3px;
   overflow: hidden;
 
