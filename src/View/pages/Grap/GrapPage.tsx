@@ -100,8 +100,6 @@ function Grappage() {
             <div className="reel"></div>
             <div className="reel"></div>
           </div>
-
-
         </div>
 
 
