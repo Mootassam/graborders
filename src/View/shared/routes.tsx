@@ -38,7 +38,6 @@ const privateRoutes = [
 ];
 
 const screenRoutes = [
-
   {
     path: "/currency",
     loader: () => import("../pages/Currency/CurrecnyPage"),
