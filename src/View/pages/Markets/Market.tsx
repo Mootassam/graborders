@@ -102,22 +102,22 @@ function Market() {
 
           <div className="button__action">
             <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">Company Profile</label>
+            <label htmlFor="" className="action__label">Company</label>
           </div>
 
           <div className="button__action">
             <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">Promotion Reward</label>
+            <label htmlFor="" className="action__label">T&C</label>
           </div>
 
           <div className="button__action">
             <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">Invitatation</label>
+            <label htmlFor="" className="action__label">FAQs</label>
           </div>
 
           <div className="button__action">
             <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">Promotion Reward</label>
+            <label htmlFor="" className="action__label">Invitation</label>
           </div>
 
         </div>
