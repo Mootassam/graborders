@@ -1,9 +1,10 @@
 
 import React, { useEffect, useState } from "react";
+import SubHeader from "../../shared/Header/SubHeader"
 
 function Tc() {
     return <div>
-        <h1>T&C</h1>
+        <SubHeader title="T&C" />
     </div>
 }
 export default Tc;

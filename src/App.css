@@ -1397,3 +1397,20 @@ button:disabled {
   text-decoration: none;
   color: #000;
 }
+
+/* styling the subpage__header */
+.subpage__header {
+  background-color: #232323;
+  width: 100%;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.arrowleft {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

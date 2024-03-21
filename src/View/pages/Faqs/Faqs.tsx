@@ -1,11 +1,13 @@
 
 
 import React, { useEffect, useState } from "react";
+import SubHeader from "../../shared/Header/SubHeader"
 
 function Faq() {
 
     return <div>
-        <h1>Faq</h1>
+        <SubHeader title="FAQs" />
+
     </div>
 }
 export default Faq;
