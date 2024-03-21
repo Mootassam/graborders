@@ -17,7 +17,7 @@ function Market() {
     image: "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/ca5d12864c12916c05640b36e47ac5c9.png",
     title: "Shopee",
     Entrylimit: "0.00",
-    LevelLimit: "300",
+    LevelLimit: "Lv 0",
     Dailyorder: "30",
     Comimsion: '0.26%',
   }, {
