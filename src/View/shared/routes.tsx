@@ -33,6 +33,16 @@ const privateRoutes = [
     exact: true,
   },
 
+
+
+];
+
+const screenRoutes = [
+
+  {
+    path: "/currency",
+    loader: () => import("../pages/Currency/CurrecnyPage"),
+  },
   {
     path: "/invitation",
     loader: () => import("../pages/Invitation/Invitation"),
@@ -53,16 +63,6 @@ const privateRoutes = [
     loader: () => import("../pages/T&C/Tc"),
     exact: true,
   },
-
-];
-
-const screenRoutes = [
-
-  {
-    path: "/currency",
-    loader: () => import("../pages/Currency/CurrecnyPage"),
-  },
-
 
 ];
 const publicRoutes = [
