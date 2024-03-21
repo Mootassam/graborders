@@ -1,15 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/styles.css";
 function Grappage() {
-
-
-
   const icon_width = 79;
   const icon_height = 79;
   const num_icons = 9;
   const time_per_icons = 100;
   const indexes = [0, 0, 0];
-
 
   const roll = (reel, offset = 0) => {
     const delta = (offset + 2) * num_icons + Math.round(Math.random() * num_icons);
@@ -73,16 +69,6 @@ function Grappage() {
     }
   }
 
-
-
-
-
-  /**
-   * Roll all reels, when promise resolves roll again
-   */
-
-
-  // Kickoff
 
 
 
@@ -238,7 +224,6 @@ function Grappage() {
           </div>
 
         </div>
-
       </div>
     </div>
   </>

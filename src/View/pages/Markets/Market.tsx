@@ -13,6 +13,37 @@ function Market() {
   useEffect(() => { }, [response]);
 
 
+  const data = [{
+    image: "",
+    title: "Shopee",
+    Entrylimit: "0.00",
+    LevelLimit: "300",
+    Dailyorder: "30",
+    Comimsion: '0.26%',
+  }, {
+    image: "",
+    title: "Vip1",
+    Entrylimit: "500",
+    LevelLimit: "Lv 1",
+    Dailyorder: "55",
+    Comimsion: '0.50%',
+  }, {
+    image: "",
+    title: "Vip2",
+    Entrylimit: "700",
+    LevelLimit: "Lv 2",
+    Dailyorder: "70",
+    Comimsion: '0.70%',
+  }, {
+    image: "",
+    title: "Vip3",
+    Entrylimit: "1500",
+    LevelLimit: "Lv 3",
+    Dailyorder: "100",
+    Comimsion: '0.96%',
+  }]
+
+
   const NewsTicker = ({ text }) => {
     return (
       <div className="news-ticker-container">
@@ -30,6 +61,9 @@ function Market() {
         flexDirection: "column",
       }}
     >
+
+
+      <div className="market__header"></div>
 
       <div className="advertise__header">
         <Carousel>
@@ -95,27 +129,27 @@ function Market() {
 
 
             <div className="content__vip">
-              {Array.from({ length: 6 }).map(() => <>
+              {data.map((item) => <>
                 <div className="vip">
                   <div className="vip__image"></div>
                   <div className="vip__text">
-                    <div className="vip__title">Shopee</div>
+                    <div className="vip__title">{item.title}</div>
                     <div className="vip__details">
                       <div className="vip__description">
                         <div className="description__key">Entry Limit:</div>
-                        <div className="description__value"> 0.00</div>
+                        <div className="description__value"> {item.Entrylimit}</div>
                       </div>
                       <div className="vip__description">
                         <div className="description__key">Level Limit:</div>
-                        <div className="description__value"> Lv 1</div>
+                        <div className="description__value"> {item.LevelLimit}</div>
                       </div>
                       <div className="vip__description">
                         <div className="description__key">Daily order:</div>
-                        <div className="description__value">50</div>
+                        <div className="description__value">{item.Dailyorder}</div>
                       </div>
                       <div className="vip__description">
                         <div className="description__key">Comimsion rate:</div>
-                        <div className="description__value"> 0.26%</div>
+                        <div className="description__value"> {item.Comimsion}</div>
                       </div>
                     </div>
                   </div>
