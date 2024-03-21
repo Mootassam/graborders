@@ -43,6 +43,20 @@ function Market() {
     Comimsion: '0.96%',
   }]
 
+  const button__action = [{
+    icon: "fa-regular fa-building",
+    text: "Company"
+  }, {
+    icon: "fa-solid fa-file-contract",
+    text: "T&C"
+  }, {
+    icon: "fa-solid fa-question",
+    text: "FAQs"
+  }, {
+    icon: "fa fa-user-plus",
+    text: "Invitation"
+  }]
+
 
   const NewsTicker = ({ text }) => {
     return (
@@ -99,26 +113,19 @@ function Market() {
 
         </div>
         <div className="adverstise__actions">
+          {button__action.map((item) =>
 
-          <div className="button__action">
-            <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">Company</label>
-          </div>
+            <>
 
-          <div className="button__action">
-            <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">T&C</label>
-          </div>
+              <div className="button__action">
+                <div className="action__cirlce">
+                  <i className={`${item.icon} icon__action`} ></i>
+                </div>
+                <label htmlFor="" className="action__label">{item.text}</label>
+              </div >
+            </>)}
 
-          <div className="button__action">
-            <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">FAQs</label>
-          </div>
 
-          <div className="button__action">
-            <div className="action__cirlce"></div>
-            <label htmlFor="" className="action__label">Invitation</label>
-          </div>
 
         </div>
 
@@ -192,7 +199,7 @@ function Market() {
       </div>
 
 
-    </div>
+    </div >
   );
 }
 
