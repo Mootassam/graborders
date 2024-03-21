@@ -375,7 +375,7 @@ td {
 }
 
 .vip__image {
-  background-color: #6f55ca;
+
   width: 50%;
 
   border-radius: 10px;
@@ -942,7 +942,6 @@ li {
 
 img {
   max-width: 100%;
-
   object-fit: cover;
 }
 
