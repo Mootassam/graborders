@@ -364,6 +364,7 @@ td {
   border-radius: 10px;
   gap: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .vip__image {
@@ -430,9 +431,9 @@ td {
 }
 
 .description__value {
-  color: #A58C53;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(19, 54, 75);
 }
 
 .vip__title {
