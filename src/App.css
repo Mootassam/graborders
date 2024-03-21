@@ -1392,3 +1392,8 @@ button:disabled {
   color: #3783F7;
   border: 2px solid #3783F7;
 }
+
+.remove__ligne {
+  text-decoration: none;
+  color: #000;
+}

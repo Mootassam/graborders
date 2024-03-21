@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from "react-router-dom";
 function Market() {
   const [response, setReponse] = useState([]);
   const searchAllCoins = async () => {
@@ -45,16 +46,20 @@ function Market() {
 
   const button__action = [{
     icon: "fa-regular fa-building",
-    text: "Company"
+    text: "Company",
+    link: "/company"
   }, {
     icon: "fa-solid fa-file-contract",
-    text: "T&C"
+    text: "T&C",
+    link: "/tc"
   }, {
     icon: "fa-solid fa-question",
-    text: "FAQs"
+    text: "FAQs",
+    link: "/faqs"
   }, {
     icon: "fa fa-user-plus",
-    text: "Invitation"
+    text: "Invitation",
+    link: "/invitation"
   }]
 
 
@@ -115,7 +120,7 @@ function Market() {
         <div className="adverstise__actions">
           {button__action.map((item) =>
 
-            <>
+            <Link to={item.link} className="remove__ligne">
 
               <div className="button__action">
                 <div className="action__cirlce">
@@ -123,7 +128,7 @@ function Market() {
                 </div>
                 <label htmlFor="" className="action__label">{item.text}</label>
               </div >
-            </>)}
+            </Link>)}
 
 
 

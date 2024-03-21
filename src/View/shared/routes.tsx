@@ -32,6 +32,28 @@ const privateRoutes = [
     loader: () => import("../pages/Auth/Profile"),
     exact: true,
   },
+
+  {
+    path: "/invitation",
+    loader: () => import("../pages/Invitation/Invitation"),
+    exact: true,
+  },
+  {
+    path: "/company",
+    loader: () => import("../pages/Company/Company"),
+    exact: true,
+  },
+  {
+    path: "/faqs",
+    loader: () => import("../pages/Faqs/Faqs"),
+    exact: true,
+  },
+  {
+    path: "/tc",
+    loader: () => import("../pages/T&C/Tc"),
+    exact: true,
+  },
+
 ];
 
 const screenRoutes = [
