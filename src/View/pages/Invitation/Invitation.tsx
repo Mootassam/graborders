@@ -6,6 +6,8 @@ import SubHeader from "../../shared/Header/SubHeader"
 function Invitation() {
     return <div className="app__invitation">
         <SubHeader title="Invitation" />
+
+        <div className="invitation__absolute"></div>
         <div className="invitation__content">
             <div className="invitation__logo">
                 <img src="/images/invitation/logo.png" alt="" className="invitation__" />
