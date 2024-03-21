@@ -43,7 +43,7 @@ function Online() {
           <div className="list__header">
             {item.title} </div>
           <div className="online__image">
-            <img src="/images/online/customer.jpg" alt="" />
+            <img src="/images/online/customer.jpg" alt=""  className="customer__image"/>
           </div>
           <div className="online__footer">
             <a href={item.number} className="number__link">

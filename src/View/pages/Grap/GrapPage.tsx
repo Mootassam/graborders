@@ -75,7 +75,10 @@ function Grappage() {
 
   return <>
     <div className="app__grappage">
+      <div className="online__service">
 
+        <h4>Grap</h4>
+      </div>
 
       <div className="grap__order">
 
