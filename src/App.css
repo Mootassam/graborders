@@ -943,6 +943,7 @@ li {
 img {
   max-width: 100%;
   object-fit: cover;
+
 }
 
 .thumbs {
@@ -1409,6 +1410,50 @@ button:disabled {
 
 .arrowleft {
   color: white;
-  font-size: 24px;
+  font-size: 17px;
   cursor: pointer;
+}
+
+/* styling  the invitation */
+
+.app__invitation {
+  background-color: #EDF1F7;
+
+}
+
+.invitation__ {
+  width: 150px;
+  height: max-content;
+}
+
+.invitation__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 140px;
+  height: auto;
+}
+
+.refrenece__code {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.invitation__button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.invitation__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }

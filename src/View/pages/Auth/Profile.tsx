@@ -5,7 +5,7 @@ function Profile() {
     <div className="app__profile">
 
       <div className="profile__arc">
-        
+
         <div className="profile__header">
           <div className="profile__vip">
             <img src="https://img.freepik.com/premium-photo/profile-shot-asian-cute-woman-perfect-skin-turn-left-smiling-joyfully-pose-near-blue-background-standing-queue-awaiting-coffee-take-away-relaxed-chatting-girlfriend-wear-yellow-summer-t-shirt_1258-57885.jpg" alt="" className="profile__photo" />
