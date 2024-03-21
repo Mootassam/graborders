@@ -131,6 +131,9 @@ function Market() {
             <div className="content__vip">
               {data.map((item) => <>
                 <div className="vip">
+
+                  <div className="subscribe__"></div>
+
                   <div className="vip__image">
                     <img src={item.image} alt="Vip__image" />
                   </div>

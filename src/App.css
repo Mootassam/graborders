@@ -345,13 +345,25 @@ td {
   margin-top: 10px;
 }
 
+.subscribe__ {
+  position: absolute;
+  background-image: url('/images/home/Subsribe.png');
+  height: 60px;
+  width: 100px;
+  right: 2px;
+  top: -4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .vip {
   display: flex;
   background-color: #fff;
   width: 100%;
   padding: 10px 10px;
   border-radius: 10px;
-  gap: 20px
+  gap: 20px;
+  position: relative;
 }
 
 .vip__image {
@@ -418,7 +430,8 @@ td {
 }
 
 .description__value {
-  color: #b1b4c3;
+  color: #A58C53;
+  font-weight: 400;
   font-size: 15px;
 }
 
@@ -998,6 +1011,8 @@ img {
   padding-left: 2%;
   padding-right: 2%;
 }
+
+
 
 /* Styling the grapPage */
 
