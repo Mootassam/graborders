@@ -69,7 +69,7 @@ function Profile() {
             <div className="profile__balance">300000</div>
             <div className="profile__button">
               <div className="button__deposit">Deposit</div>
-              <div className="button__withdraw">Withdraw</div>
+             <Link to="/withdraw" className="button__withdraw" style={{textDecoration:"none"}} >  Withdraw</Link>
             </div>
           </div>
         </div>

@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from "react-router-dom";
 function Market() {
-  const [response, setReponse] = useState([]);
   const searchAllCoins = async () => {
 
   };
@@ -11,7 +10,6 @@ function Market() {
     searchAllCoins();
   }, []);
 
-  useEffect(() => { }, [response]);
 
 
   const data = [{
@@ -112,9 +110,8 @@ function Market() {
           <div className="button__deposit">
             Deposit
           </div>
-          <div className="button__withdraw">
-            Withdraw
-          </div>
+          <Link to="/withdraw" className="button__withdraw" style={{textDecoration:"none"}} >  Withdraw</Link>
+
 
         </div>
         <div className="adverstise__actions">

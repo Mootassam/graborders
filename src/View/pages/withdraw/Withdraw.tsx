@@ -4,7 +4,7 @@ import SubHeader from "../../../View/shared/Header/SubHeader";
 function Withdraw() {
   return (
     <div>
-      <SubHeader title="WithDraw" path="/profile" />
+      <SubHeader title="WithDraw" path="/" />
       <div className="withdraw__content">
         <div className="withdraw__header">
           <h3 className="hall" style={{ paddingTop: 0 }}>
