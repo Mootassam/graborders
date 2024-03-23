@@ -1457,3 +1457,43 @@ button:disabled {
   justify-content: center;
   cursor: pointer;
 }
+
+.app__wallet {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.wallet__ {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wallet__form {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form__group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.label__form {
+  display: flex;
+  gap: 10px;
+}
+.input__div {
+  flex: 1;
+}
+.input__ {
+  padding: 10px;
+  width: 100%;
+}
+.input__:focus {
+  outline: none;
+}
