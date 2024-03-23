@@ -1,17 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "../styles/styles.css";
 function Grappage() {
-  const icon_width = 79;
   const icon_height = 79;
   const num_icons = 9;
   const time_per_icons = 100;
-  const indexes = [0, 0, 0];
 
   const roll = (reel, offset = 0) => {
     const delta =
       (offset + 2) * num_icons + Math.round(Math.random() * num_icons);
 
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, ) => {
       const style = getComputedStyle(reel);
       const backgroundPositionY = parseFloat(style["background-position-y"]);
       const targetBackgroundPositionY =
@@ -43,7 +41,7 @@ function Grappage() {
   const rollAll = () => {
     const reelsList = document.querySelectorAll(".slots > .reel");
     Promise.all(Array.from(reelsList).map((reel, i) => roll(reel, i)))
-      .then((deltas) => {
+      .then(() => {
         const slots = document.querySelector(".borders");
         const modal = document.querySelector(".modal__grap");
         if (slots) {
@@ -59,6 +57,8 @@ function Grappage() {
         }, 2000);
       })
       .catch((error) => {
+        console.log(error);
+        
         // Handle errors
       });
   };

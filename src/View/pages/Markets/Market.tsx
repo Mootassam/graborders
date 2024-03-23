@@ -5,7 +5,16 @@ import { Link } from "react-router-dom";
 function Market() {
   const searchAllCoins = async () => {};
 
-  const [selectedItem , setItems] = useState("")
+
+  interface DataItem {
+    image: string;
+    title: string;
+    Entrylimit: string;
+    LevelLimit: string;
+    Dailyorder: string;
+    Comimsion: string;
+  }
+  const [selectedItem , setItems] = useState<DataItem | null>(null)
   useEffect(() => {
     searchAllCoins();
     console.log(selectedItem);
