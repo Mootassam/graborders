@@ -1646,3 +1646,8 @@ button:disabled {
   width: 100%;
   padding: 20px;
 }
+
+.withdraw__page{ 
+  padding-left: 2%;
+  padding-right: 2%;
+}

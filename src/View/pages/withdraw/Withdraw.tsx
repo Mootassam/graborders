@@ -5,6 +5,7 @@ function Withdraw() {
   return (
     <div>
       <SubHeader title="WithDraw" path="/" />
+      <div className="withdraw__page">
       <div className="withdraw__content">
         <div className="withdraw__header">
           <h3 className="hall" style={{ paddingTop: 0 }}>
@@ -59,6 +60,7 @@ function Withdraw() {
           </li>
           <li>(4) withdraw time is 16:00-15:59</li>
         </ul>
+      </div>
       </div>
     </div>
   );
