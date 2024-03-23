@@ -26,29 +26,39 @@ function Profile() {
     <div className="app__profile">
       <div className="profile__arc">
         <div className="profile__header">
-          <div className="profile__vip">
-            <img
-              src="https://img.freepik.com/premium-photo/profile-shot-asian-cute-woman-perfect-skin-turn-left-smiling-joyfully-pose-near-blue-background-standing-queue-awaiting-coffee-take-away-relaxed-chatting-girlfriend-wear-yellow-summer-t-shirt_1258-57885.jpg"
-              alt=""
-              className="profile__photo"
-            />
-          </div>
-          <div className="profile__user">
-            <div className="user__header">
-              <div className="user__name">Javedd</div>
-              <div className="user__vip">
+          <div className="header__left">
+            <div className="profile__vip">
+              <img
+                src="https://img.freepik.com/premium-photo/profile-shot-asian-cute-woman-perfect-skin-turn-left-smiling-joyfully-pose-near-blue-background-standing-queue-awaiting-coffee-take-away-relaxed-chatting-girlfriend-wear-yellow-summer-t-shirt_1258-57885.jpg"
+                alt=""
+                className="profile__photo"
+              />
+            </div>
+            <div className="profile__user">
+              <div className="user__header">
+                <div className="user__name">Javedd</div>
+                <div className="user__vip">
+                  {" "}
+                  <img
+                    src="/images/profile/diamond.png"
+                    alt="vip__profile"
+                    className="diamond__vip"
+                  />{" "}
+                  Lv1{" "}
+                </div>
+              </div>
+              <div>
                 {" "}
-                <img
-                  src="/images/profile/diamond.png"
-                  alt="vip__profile"
-                  className="diamond__vip"
-                />{" "}
-                Lv1{" "}
+                invitation code :<span className="user__name">teku9a </span>
               </div>
             </div>
-            <div>
-              {" "}
-              invitation code :<span className="user__name">teku9a </span>
+          </div>
+          <div className="header__logout">
+            <div className="button__logout">
+              <i
+                className="fa-solid fa-right-from-bracket"
+                style={{ fontSize: 17, color: "white" }}
+              ></i>
             </div>
           </div>
         </div>
