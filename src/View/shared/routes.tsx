@@ -32,9 +32,6 @@ const privateRoutes = [
     loader: () => import("../pages/Auth/Profile"),
     exact: true,
   },
-
-
-
 ];
 
 const screenRoutes = [
@@ -63,6 +60,37 @@ const screenRoutes = [
     exact: true,
   },
 
+  {
+    path: "/tasks",
+    loader: () => import("../pages/Tasks/Tasks"),
+    exact: true,
+  },
+  {
+    path: "/team",
+    loader: () => import("../pages/Team/Team"),
+    exact: true,
+  },
+
+  {
+    path: "/withdraw",
+    loader: () => import("../pages/withdraw/Withdraw"),
+    exact: true,
+  },
+  {
+    path: "/security",
+    loader: () => import("../pages/Auth/ChangePassword"),
+    exact: true,
+  },
+  {
+    path: "/transacation",
+    loader: () => import("../pages/Transactions/Transaction"),
+    exact: true,
+  },
+  {
+    path: "/wallet",
+    loader: () => import("../pages/wallet/Wallet"),
+    exact: true,
+  },
 ];
 const publicRoutes = [
   {
