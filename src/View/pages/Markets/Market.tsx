@@ -233,8 +233,10 @@ function Market() {
               <div className="single__header">{selectedItem?.title}</div>
 
               <div className="order__time">
-                <div>Order Time: 2022-06-27 14:03:52</div>
-                <div>Order Number: N02206271321321354165</div>
+                <div style={{fontSize:20}}>Entry Limit: {selectedItem?.Entrylimit}</div>
+                <div style={{fontSize:20}}>Level Limit: {selectedItem?.LevelLimit}</div>
+                <div style={{fontSize:20}}>Daily order: {selectedItem?.Dailyorder}</div>
+                <div style={{fontSize:20}}>Commission Rate: {selectedItem?.Comimsion}</div>
               </div>
               <div className="badge__ pending">
                 <label>Pending</label>
