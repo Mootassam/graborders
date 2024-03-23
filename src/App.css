@@ -1547,3 +1547,36 @@ button:disabled {
   color: #3783f7 !important;
   border-bottom: 3px solid #3783f7;
 }
+.transaction__content {
+  background-color: #fff;
+  width: 100%;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 15px;
+}
+
+.content__transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 8px;
+  border-bottom: 1px solid #ccc;
+}
+.transaction__left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.transaction__right {
+  font-size: 16px;
+  color: #10a710;
+  font-weight: 500;
+}
+.transaction__date {
+  font-size: 13.3px;
+  color: grey;
+}
+.red {
+  color: red;
+}
