@@ -6,7 +6,7 @@ import SubHeader from "../../shared/Header/SubHeader"
 function Faq() {
 
     return <div>
-        <SubHeader title="FAQs" />
+        <SubHeader title="FAQs" path="/" />
 
         <span>Digital Growth, Organinc Growth <br />
             Organic traffic is the lifeblood of any successful online business  <br />

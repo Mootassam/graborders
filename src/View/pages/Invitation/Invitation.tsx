@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import SubHeader from "../../shared/Header/SubHeader";
 
 function Invitation() {
   return (
     <div className="app__invitation">
-      <SubHeader title="Invitation" />
+      <SubHeader title="Invitation" path="/" />
 
       <div className="invitation__absolute"></div>
       <div className="invitation__content">

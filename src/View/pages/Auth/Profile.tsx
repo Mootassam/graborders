@@ -6,7 +6,7 @@ function Profile() {
     {
       icon: "fa-solid fa-clock-rotate-left",
       name: "Tasks History",
-      url: "/tasks",
+      url: "/order",
     },
     { icon: "fa-solid fa-users", name: "My Team", url: "/team" },
     {
