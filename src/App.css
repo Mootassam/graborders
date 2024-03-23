@@ -1470,12 +1470,21 @@ button:disabled {
   flex-direction: column;
   gap: 10px;
 }
+.form__ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
 .wallet__form {
   background-color: #fff;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .form__group {
   display: flex;
@@ -1496,4 +1505,16 @@ button:disabled {
 }
 .input__:focus {
   outline: none;
+}
+
+.button__submit {
+  background-color: #00773d;
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
 }
