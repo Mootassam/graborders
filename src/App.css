@@ -1580,3 +1580,52 @@ button:disabled {
 .red {
   color: red;
 }
+
+.withdraw__content {
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 30px 10px;
+}
+
+.withdraw__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.withdraw__ {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.withdraw__ > div {
+  border: 1px solid #ffb744 !important;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #ffb744;
+}
+.withdraw__ > div:hover {
+  background-color: #ffb744;
+  color: white;
+}
+
+.confirm {
+  background-color: #0056b3;
+  color: white;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+}
