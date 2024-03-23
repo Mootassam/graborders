@@ -1490,8 +1490,8 @@ button:disabled {
   display: grid;
   width: 100%;
   align-items: center;
-  gap:5px;
-grid-template-columns: repeat(20%, 70%);
+  gap: 5px;
+  grid-template-columns: repeat(20%, 70%);
 }
 .label__form {
   display: flex;
@@ -1517,4 +1517,33 @@ grid-template-columns: repeat(20%, 70%);
   font-size: 14px;
   cursor: pointer;
   border-radius: 10px;
+}
+
+.list__transaction {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #ffff;
+  padding: 17px 20px 0px 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.list__transaction > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 17px;
+}
+
+.list__transaction span {
+  font-size: small;
+  cursor: pointer;
+  color: #939393;
+}
+
+.active__transacttion {
+  color: #3783f7 !important;
+  border-bottom: 3px solid #3783f7;
 }
